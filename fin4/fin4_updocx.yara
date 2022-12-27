@@ -16,5 +16,5 @@ rule UpDocX
         $s6 = "exportLog" ascii wide
         $s7 = "generateNewLog" ascii wide
     condition:
-        all of (s*)
+        all of ($s*)
 }
