@@ -3,7 +3,7 @@ rule UpDocX
     meta:
         description = "Identify UpDocX VB.NET PE associated with fin4 activity"
         author = "stvrsxz"
-        version = "1.0"
+        version = "1.0.0"
         hash1 = "d22df444e867fdf647f6757547b2b75968453c3bb398a5d94c5e17a5e57af7f6"
         hash2 = "629e8270c623002157cb38fe0f612665f22094cdc479c36452ee8fdc5d73326b"
         hash3 = "38fbbd70ea14e78d44b9b841a4bccd65c7051c7cb59b28c186c16e964399845a"
@@ -25,8 +25,8 @@ rule VBA
     meta:
         description = "Identify vba associated with fin4. Inspired by https://github.com/mandiant/iocs/blob/master/FIN4/MACROCHECK.yara"
         author = "stvrsxz"
-        version = "1.0"
-        hash2 = "ab385c7bcb2ad420ffe04d34705ca3e94981f80d7d0c95fb26241e4857aa8a9a"
+        version = "1.0.0"
+        hash1 = "ab385c7bcb2ad420ffe04d34705ca3e94981f80d7d0c95fb26241e4857aa8a9a"
 
     strings:
         $PARAMpword = "pword=" ascii wide
@@ -45,7 +45,7 @@ rule VBAwithKeylogger
     meta:
         description = "Identify vba associated with fin4 (see rule VBA) which also have the ability to download a keylogger"
         author = "stvrsxz"
-        version = "1.0"
+        version = "1.0.0"
         hash1 = "ead9a3b68f3e6f6788d64a9e47ddb29329c978daaaa3d4ab736de6a02efa2887"
 
     strings:
