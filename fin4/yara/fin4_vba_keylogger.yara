@@ -11,7 +11,7 @@ rule Fin4_VBA_Keylogger_Download
         $PARAMmsg = "msg=" ascii wide
         $PARAMuname = "uname=" ascii
         $VBAWinVersionString = "Technically could be run against remote computers" ascii wide
-        $upload = "upload" ascii wide nocase
+        $upload = "upload" ascii nocase
         $keyloggerPE = "WINWORD32.exe" ascii wide
 
     condition:

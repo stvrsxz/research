@@ -11,7 +11,7 @@ rule Fin4_VBA
         $PARAMmsg = "msg=" ascii wide
         $PARAMuname = "uname=" ascii
         $VBAWinVersionString = "Technically could be run against remote computers" ascii wide
-        $upload = "upload" ascii wide nocase
+        $upload = "upload" ascii nocase
 
     condition:
         all of ($PARAM*) and $VBAWinVersionString and $upload
